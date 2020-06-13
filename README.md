@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# sueD [![Netlify Status](https://api.netlify.com/api/v1/badges/dbcf15cf-40ff-4962-87db-50555aa83995/deploy-status)](https://app.netlify.com/sites/sued-web/deploys)
 
-## Available Scripts
+[English below]
 
-In the project directory, you can run:
+### Sobre
+**sueD** é uma implementação no navegador de um programa de MS-DOS dos anos 90. Ele foi feito para "enganar" as pessoas e fazê-las acreditar que o computador era capaz de responder perguntas desde que ele o reconhecesse como seu mestre. É um truque simples mas que funcionava bastante bem onde a informação não estava disponível a todo momento na era pré-_Google_ e de internet de difícil acesso. A premissa é simples: você faz uma pergunta para a _entidade_ no computador e ela te responde corretamente.
 
-### `yarn start`
+### Instruções
+- Aperte `\` com a caixa de texto de pergunta selecionada;
+- Escreva a resposta;
+- Enquanto a resposta está sendo digitada, uma pergunta aleatória começa a ser digitada na caixa de pergunta;
+- Novamente aperte `\` para indicar que a resposta terminou de ser inserida;
+- Termine de escrever a pergunta;
+- Aperte `Enter` ou então clique em **Perguntar**;
+- Tanto a pergunta quanto a resposta aparecerão na caixa no final da página.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### About
+_[for now, the interface is only available in Portuguese]_
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**sueD** is a browser implementation of an MS-DOS program of the 90's. It was made to "trick" people and make them believe that their computer was capable of answering questions as long as it recognized the user as their master. It is a simple trick that worked well enough where information was not always available at every time in the pre-_Google_ age and difficult access to the internet. The premise is simple: you ask a question to the _entity_ inside the computer and it answers you correctly.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Instructions
+- Press `\` when the text input is selected;
+- Write the answer;
+- While the answer is being typed, a random question will start to appear in the question input;
+- Again press `\` to indicate that the answer is finished being inserted;
+- Finish writing the question;
+- Press `Enter` or click **Perguntar**;
+- The question as well as the answer will appear in the box at the end of the page.
