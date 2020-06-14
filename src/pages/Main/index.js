@@ -29,7 +29,7 @@ export default function Main() {
   const [selectedAnswer, setSelectedAnswer] = useState(selectRandomAnswer());
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
-  const [answerFinished, setAnswerFinished] = useState(false);
+  const [answerFinished, setAnswerFinished] = useState(true);
 
   useEffect(() => {
     document.getElementById('dummyAnswer').scrollIntoView(false);
@@ -47,16 +47,16 @@ export default function Main() {
     ev.persist();
 
     const pressedKey = ev.nativeEvent.data;
+    let newAnswerFinished = answerFinished;
 
-    if (!answerFinished) {
+    if (pressedKey === '\\') {
+      newAnswerFinished = !newAnswerFinished;
+      setAnswerFinished(newAnswerFinished);
+    }
+
+    if (!newAnswerFinished) {
       ev.preventDefault();
-    }
 
-    if (pressedKey === '\\' && !answerFinished) {
-      setAnswerFinished(true);
-    }
-
-    if (!answerFinished) {
       if (pressedKey !== '\\') {
         setAnswer(`${answer}${pressedKey}`);
       }
@@ -67,7 +67,11 @@ export default function Main() {
 
       setQuestion(`${question}${questions[selectedQuestion][question.length]}`);
     } else {
-      setQuestion(ev.target.value);
+      if (pressedKey !== '\\') {
+        setQuestion(ev.target.value);
+      } else {
+        setQuestion(`${question}${questions[selectedQuestion][question.length]}`);
+      }
     }
   }
 
@@ -82,7 +86,7 @@ export default function Main() {
     setAnswers(newAnswers);
     setQuestion('');
     setAnswer('');
-    setAnswerFinished(false);
+    setAnswerFinished(true);
     setSelectedQuestion(selectRandomQuestion());
     setSelectedAnswer(selectRandomAnswer());
   }
