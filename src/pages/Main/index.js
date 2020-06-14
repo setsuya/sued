@@ -107,7 +107,7 @@ export default function Main() {
       </Answers>
       <Footer>
         <hr />
-        Criado e hospedado no <img src="/github_logo.svg" alt="Github logo" /> por <a href="https://github.com/setsuya" target="_blank" rel="noopener noreferrer">Setsuya</a>. Última atualização em 10/06/2020.
+        Criado e hospedado no <img src="/github_logo.svg" alt="Github logo" /> por <a href="https://github.com/setsuya" target="_blank" rel="noopener noreferrer">Setsuya</a>. Última atualização em 13/06/2020.
       </Footer>
     </Container>
   );
